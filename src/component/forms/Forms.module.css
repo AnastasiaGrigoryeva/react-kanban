@@ -1,0 +1,61 @@
+.form {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+}
+form{
+	padding-bottom: 15px;
+}
+
+.input,
+.selecter {
+	display: block;
+	background: #FFFFFF;
+    border-radius: 5px;
+    margin: 0px 12px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 7px 9px 7px 8px;
+	border: none;
+}
+.selecter{
+	width: 258px;
+}
+
+.input :focus-visible { 
+	outline: none;
+}
+
+
+
+.submit {
+	height: 29px;
+	width: 102px;
+	color: white;
+	background: #0079BF;
+	border-radius: 5px;
+	border: none;
+	margin-top: 20px;
+	margin-left: 14px;
+	margin-bottom: 8px;
+	cursor: pointer;
+	bottom: 0;
+	width: 100px;
+    height: 29px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 21px;
+	text-align: center;
+	padding: 4px 8px 4px 9px  ;
+}
+
+.submit:hover{
+	background: #5d7194;
+}
+

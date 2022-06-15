@@ -1,0 +1,67 @@
+Роутинг  
+<Main />
+
+     <BrowserRouter> 
+          <Routes>
+              <Route exact path={`/task/:task.id`}>
+                  <Board {...props}></Board>
+              </Route>
+              <Route path={`/task/:taskId`}>
+                  <TaskDetail {...props} />
+              </Route>
+            </Routes>
+       </BrowserRouter>
+
+
+       <BrowserRouter> 
+          <Routes>
+              <Route exact path={`/task/:task.id`} element={<Board {...props} />} />
+              <Route path={`/task/:taskId`} element={<TaskDetail {...props} />} />
+          </Routes>
+       </BrowserRouter>
+
+Выпадающий список и смена status
+<TaskDetail />
+
+Event + unpdate in Array
+
+	const handleChange = (e) => {
+		const newStatus = e.target.value
+		const updatedTasks = tasks.map(task => {
+			if (task.id === task.id) {
+				return {...task, status: newStatus}
+			}
+			return task
+		})
+		setTasks(updatedTasks)
+	}
+
+				<select className={css.select} onChange={handleChange} value={task.title}>
+					{Object.values(tasks).map(list => {
+						return <option key={list} value={task.title}>{task.title}</option>
+					})}
+				</select>
+
+
+Назад 
+<TaskDetail />
+
+<Link to='/' className={css.homeLink}>x</Link>
+
+
+
+            <Link to='/' className={css.homeLink}>&#8592; Back</Link>
+            <div>
+                <h2 className={css.title}>{this.task.title}</h2>
+
+                <button className="button button-close" >
+                    <span>x</span>
+                </button>
+                
+
+            </div>
+
+            <p>Description: {this.task.description || '(no description)'}</p>
+
+
+

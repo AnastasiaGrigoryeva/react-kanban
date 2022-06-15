@@ -1,0 +1,13 @@
+.main {
+    background: #0079BF;
+    height: 590px ;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: inherit;
+}
+@media screen and (max-width: 1000px) {
+    .main {
+       height: 100%;
+    }
+}
+
